@@ -1,0 +1,42 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+#massive{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999; 
+}
+
+#loader {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 3s linear infinite; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px; 
+    margin-left: -25px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
